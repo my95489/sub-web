@@ -241,7 +241,29 @@ export default {
       options: {
         clientTypes: CLIENT_TYPES,
         backendOptions: [{ value: "http://64.188.17.221:25500/sub?" }],
-        remoteConfig: REMOTE_CONFIGS
+        remoteConfig: [
+  {
+    label: "ACL4SSR 实用规则库",
+    options: [
+      {
+        label: "ACL4SSR_Online_Mini (精简版-强烈推荐)",
+        value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"
+      },
+      {
+        label: "ACL4SSR_Online_Mini_AdblockPlus (精简版+强力去广告)",
+        value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini"
+      },
+      {
+        label: "ACL4SSR_Online_NoAuto (精简版-取消测速)",
+        value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini"
+      },
+      {
+        label: "ACL4SSR_Online (完整全量版)",
+        value: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+      }
+    ]
+  }
+]
       },
 
       // 状态
